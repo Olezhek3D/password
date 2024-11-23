@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Jacques+Francois+Shadow&family=Robo to:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">генератор паролей</h1>
+        <nav id="languageSelection">
+            <a href="#"><img src="img/en.png" alt="" id="en"></a>
+            <a href="#"><img src="img/ru.png" alt="" id="ru"></a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2 class="myH2">Создай свой пароль!</h2>
+      <div class="content">  
+        <div class="labels">
+            <ul>
+                <li> 
+                <input type="checkbox" id="RussianLowercaseCharsBtn">
+                <label class="lowerRU" for="RussianLowercaseCharsBtn">С русскими строчными</label>
+                </li>
+                <li><input type="checkbox" id="RussianUppercaseCharsBtn">
+                <label class="upperRu" for="RussianUppercaseCharsBtn">С русскими заглавными</label></li>
+                <li><input type="checkbox" id="numberCharsBtn">
+                <label class="numbers" for="numberCharsBtn">С цифрами</label></li>
+                <li><input type="checkbox" id="symbolCharsBtn">
+                <label class="symbols" for="symbolCharsBtn">С символами</label></li>
+                <li><input type="checkbox" id="EnglishLowercaseCharsBtn">
+                <label class="lowerEN" for="EnglishLowercaseCharsBtn">С английскими строчными</label></li>
+                <li><input type="checkbox" id="EnglishUppercaseCharsBtn">
+                <label  class="upperEn" for="EnglishUppercaseCharsBtn">С английскими заглавными</label></li>
+                <li><input type="text" id="customSymbolsInput" placeholder=""></li>
+            </ul>
+        </div>
+        
+    <div class="text__content">
+        <h2 class="password">твой пароль:</h2>
+        <div class="text">
+            <p id="myPassword"></p>
+        </div>
+    </div>
+</div>
+<div id="btn-wrapper">
+    <button id="myBtn">СОЗДАТЬ!</button>
+  </div>
+  
+        <h2 class="author">АВТОР: ОЛЕГ ПЕРЕВАЛОВ</h2>
+    </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>
